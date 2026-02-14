@@ -1,1 +1,18 @@
 
+portfolio/
+│
+├── index.html
+├── styles.css
+├── script.js
+│
+├── data/                      # 👈 CREATE THIS FOLDER
+│   ├── resume.txt             # Your CV in text format
+│   ├── projects.json          # Projects in JSON format
+│   ├── research.md            # Research papers in Markdown
+│   ├── publications.json      # Publications metadata
+│   ├── skills.txt             # Skills and expertise
+│   └── additional-docs/       # Optional: subdirectory for more docs
+│       ├── certificates.txt
+│       └── awards.txt
+│
+└── README.md
