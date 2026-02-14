@@ -1,0 +1,179 @@
+Dr. Arjun Magotra
+Senior Gen AI Expert
+Email: arjun.magotra.india@gmail.com
+Phone: +91-9103295143
+LinkedIn: linkedin.com/in/dr-arjun-magotra-bb37703a
+
+OBJECTIVE
+Visionary AI leader with 12+ years of experience seeking strategic leadership role in Generative AI, Computer Vision, and MLOps. Expert in driving innovation in multimodal systems and enterprise AI solutions.
+
+SUMMARY
+- 9 years in AI/ML, Deep Learning, and Research with strong focus on Generative AI
+- Expert in Computer Vision, NLP, RAG architectures, and multimodal systems (image-text)
+- Led award-winning Generative AI projects using Llama2/3, LangChain, DINOv2, and Llava1.6
+- Strong MLOps foundation: Docker, AWS SageMaker, CI/CD, scalable ML deployment
+- Proven leadership in managing cross-functional teams and strategic tech initiatives
+
+PROFESSIONAL EXPERIENCE
+
+Senior Gen AI Expert – PWC Global Solutions (via FutureSoftIndia)
+Bengaluru, India | Aug 2025 – Present
+- Led enterprise GenAI strategy integrating multimodal systems, RAG pipelines, and LLM fine-tuning for scalable business solutions
+- Managed Microsoft Azure and Power Platform ecosystem, automating workflows through AutoGen, AI Agents, and DevOps orchestration
+- Directed cross-functional teams and global stakeholders to align GenAI initiatives with digital transformation goals
+
+Senior AI Consultant – Deloitte USI (via Healthark Insights)
+Bengaluru, India | Dec 2023 – July 2025
+- Managed development of GenAI-powered factory maintenance platform, showcased at MWC 2025 Barcelona
+- Designed scalable RAG pipelines for contextual image-text understanding using LLaMA2/3, Llava1.6, DINOv2, LangChain, and ChromaDB
+- Delivered full-stack deployment via AWS SageMaker, Docker, and PostgreSQL
+- Integrated with ServiceNow and SharePoint
+- Built real-time computer vision systems achieving <100ms inference, enhancing defect detection in manufacturing
+- Automated MLOps pipelines for CI/CD, retraining, and model monitoring across edge-cloud infrastructure
+- Contributed to Deloitte-Qualcomm AI partnership, advancing AI-driven supply chain optimization
+- Mentored junior AI engineers and managed global stakeholder collaboration
+
+Assistant Professor – JAIN University
+Bengaluru, India | Feb 2023 – Dec 2023
+- Taught AI, ML, and Data Science courses
+- Guided research in Generative AI and computer vision
+
+AI Research Lead – VisionOnChip (via Dongguk University AI Lab)
+Seoul, South Korea | Apr 2019 – Feb 2022
+- Led R&D on meta-learning and deep learning models for VisionOnChip
+- Developed optimized CNNs for hardware accelerators
+- Advanced adaptive data integration for scalable, transferable learning
+
+AI Research Associate – Ministry of Science & ICT Project
+Seoul, South Korea | Apr 2016 – Mar 2019
+- Contributed to Korea's National AI Program
+- Research in meta-learning and transfer learning
+- Published SCIE-indexed papers advancing heterogeneous learning models
+
+Programmer Analyst – Yardi Systems
+Pune, India | Jul 2011 – Apr 2016
+- Developed enterprise .NET applications
+- Led migration of reporting systems
+
+EDUCATION
+
+Ph.D. in Computer Science Engineering
+Dongguk University, South Korea | 2021
+Thesis: Heterogeneous Transfer Learning in Image Classification Using Hebbian Principles
+Grade: Ph.D. 4.08/4.5, M.S. 4.33/4.5
+
+B.E. in Computer Engineering
+University of Pune, India | 2010
+First Class
+Final Year Project: Intelligent Traffic Signals
+
+TECHNICAL SKILLS
+
+Generative AI & LLMs:
+- Llama2/3, GPT-4, Hugging Face, LangChain, AutoGen
+- Fine-tuning, Prompt Engineering, RAG Architecture
+
+Computer Vision:
+- DINOv2, Llava1.6, YOLO, CNNs, Object Detection
+- OpenCV, Image Segmentation, Feature Extraction
+
+Deep Learning & ML:
+- TensorFlow, PyTorch, Keras, Scikit-learn
+- Neural Networks, Transfer Learning, Meta-Learning
+
+MLOps & Cloud:
+- AWS SageMaker, Docker, Kubernetes, CI/CD
+- Azure, Azure DevOps, Redis
+- Model Deployment, Monitoring, Versioning
+
+NLP & Vector Databases:
+- ChromaDB, FAISS, Pinecone
+- Text Embeddings, Semantic Search
+- Document Understanding, Information Retrieval
+
+Programming Languages:
+- Python (Expert), C++, R, SQL, Linux/Bash
+
+Tools & Platforms:
+- ServiceNow, SharePoint, Confluence
+- Power Platform, Node.js, React
+- RabbitMQ, MQTT, PostgreSQL
+
+KEY PROJECTS
+
+1. Multimodal GenAI Factory Maintenance Platform
+   Client: Deloitte - Showcased at MWC 2025 Barcelona
+   Description: Integrated Llama2/3, Llava1.6, and ChromaDB to build AI system for predictive maintenance
+   Technologies: LangChain, DINOv2, RAG, AWS SageMaker, Docker, ServiceNow
+   Achievements:
+   - Showcased at Mobile World Congress 2025
+   - Real-time multimodal inference
+   - Integrated with enterprise systems
+
+2. Real-Time Defect Detection System
+   Client: Deloitte - Qualcomm Partnership
+   Description: Computer vision pipeline for manufacturing quality control
+   Technologies: YOLO, CNNs, AWS, PostgreSQL, Edge Computing
+   Achievements:
+   - 90ms inference time for real-time analytics
+   - Automated MLOps pipelines
+   - Scalable edge-cloud deployment
+
+3. Meta-Learning System for Image-Text Clustering
+   Client: Dongguk University / VisionOnChip
+   Description: Heterogeneous big data embedding using CIFAR-100 and GloVe datasets
+   Technologies: CNNs, t-SNE, TensorFlow, Transfer Learning
+   Achievements:
+   - 200-dimensional vector embeddings
+   - Published SCIE-indexed papers
+   - Clustering using class hierarchy
+
+PUBLICATIONS
+
+1. Neuromodulated Dopamine Plastic Networks for Heterogeneous Transfer Learning
+   Journal: Symmetry (2021)
+   Type: SCIE-indexed
+   Link: https://www.mdpi.com/2073-8994/13/6/1043
+
+2. Improvement of Heterogeneous Transfer Learning Efficiency
+   Journal: Applied Sciences (2020)
+   Type: SCIE-indexed
+
+3. Transfer Learning Using Hebbian Plasticity
+   Conference: CSAI (2019)
+
+ACCOMPLISHMENTS
+
+- MWC 2025: Led Deloitte's GenAI solution showcased at Mobile World Congress Barcelona
+- Winner - DoraHacks Hackathon Seoul - AI-based personal identification software
+- Invited Speaker - Niti Aayog Workshop on AI & Cybersecurity 2024
+- Fully-funded Ph.D. scholarship at Dongguk University (Top-500 QS ranked)
+- Published multiple first-author SCIE-indexed papers
+
+RESEARCH INTERESTS
+- Generative AI and Large Language Models
+- Multimodal AI Systems (Vision-Language Models)
+- Computer Vision and Object Recognition
+- Meta-Learning and Transfer Learning
+- Neural Plasticity and Hebbian Learning
+- MLOps and Scalable AI Deployment
+- Retrieval-Augmented Generation (RAG)
+
+LANGUAGES
+- English (Fluent)
+- Hindi (Native)
+- Korean (Conversational)
+
+CERTIFICATIONS & TRAINING
+- Deep Learning Specialization
+- AWS Certified Solutions Architect
+- Advanced Computer Vision
+- Natural Language Processing
+
+PROFESSIONAL MEMBERSHIPS
+- ACM Member
+- IEEE Member
+- AI Research Community
+
+REFERENCES
+Available upon request

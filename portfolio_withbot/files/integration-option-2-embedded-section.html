@@ -1,0 +1,570 @@
+<!-- 
+===============================================================================
+INTEGRATION OPTION 2: EMBEDDED CHAT SECTION
+===============================================================================
+This adds a full chat interface as a dedicated section on your portfolio page.
+Perfect if you want the chatbot to be prominently featured.
+
+INSTRUCTIONS:
+1. Add this HTML section BEFORE the closing </main> tag in your index.html
+2. You can place it between any existing sections (e.g., after Projects, before Contact)
+3. Uses the same styles from chatbot-styles.css
+4. Uses the same JavaScript from chatbot-script.js with slight modifications
+
+FEATURES:
+✓ Full-width chat interface
+✓ Integrated into page layout
+✓ Same functionality as floating widget
+✓ More prominent, professional presentation
+===============================================================================
+-->
+
+<!-- ADD THIS SECTION IN YOUR index.html (e.g., after #projects section) -->
+
+<!-- AI Chat Section -->
+<section id="ai-chat" class="section-chat">
+    <div class="container">
+        <div class="section-header-chat">
+            <h2 class="section-title-chat">🤖 Ask My AI Assistant</h2>
+            <p class="section-subtitle-chat">
+                Chat with my AI-powered assistant to learn more about my work, expertise, and projects. 
+                Get instant answers about my research, skills, or how we can collaborate!
+            </p>
+        </div>
+
+        <div class="embedded-chat-container">
+            <div class="embedded-chat-wrapper">
+                <!-- Chat Header -->
+                <div class="embedded-chat-header">
+                    <div class="chat-header-left">
+                        <div class="chat-avatar-lg">🤖</div>
+                        <div class="chat-header-text">
+                            <h3>AI Assistant</h3>
+                            <p class="status-text">
+                                <span class="status-dot"></span>
+                                Online & Ready to Help
+                            </p>
+                        </div>
+                    </div>
+                    <div class="chat-header-right">
+                        <select id="embeddedModelSelect" class="embedded-model-select">
+                            <option value="claude-sonnet-4">Claude Sonnet 4.5</option>
+                            <option value="gpt-4o">GPT-4o</option>
+                            <option value="gemini-2.0-flash">Gemini 2.0 Flash</option>
+                        </select>
+                        <button class="voice-toggle-btn" id="embeddedVoiceBtn" title="Voice Input">
+                            🎤 Voice
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Quick Suggestions -->
+                <div class="chat-suggestions">
+                    <div class="suggestion-label">Quick questions to get started:</div>
+                    <div class="suggestion-buttons">
+                        <button class="suggestion-btn">Tell me about Arjun's AI research</button>
+                        <button class="suggestion-btn">What projects has he worked on?</button>
+                        <button class="suggestion-btn">His expertise and skills</button>
+                        <button class="suggestion-btn">How to contact him?</button>
+                    </div>
+                </div>
+
+                <!-- Messages Area -->
+                <div class="embedded-chat-messages" id="embeddedChatMessages">
+                    <div class="chat-message assistant">
+                        <div class="message-avatar">🤖</div>
+                        <div class="message-content-wrapper">
+                            <div class="message-author">AI Assistant</div>
+                            <div class="message-bubble">
+                                <p>👋 Hello! I'm Dr. Arjun's AI assistant. I can help you learn about:</p>
+                                <ul>
+                                    <li>🔬 His research in AI, Computer Vision, and Deep Learning</li>
+                                    <li>💼 Projects he's led (including the MWC 2025 showcase)</li>
+                                    <li>🎯 Technical expertise and skills</li>
+                                    <li>📚 Publications and academic work</li>
+                                    <li>📞 How to get in touch</li>
+                                </ul>
+                                <p>What would you like to know?</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Typing Indicator -->
+                <div class="typing-indicator-embedded" id="embeddedTyping">
+                    <div class="message-avatar">🤖</div>
+                    <div class="message-content-wrapper">
+                        <div class="message-author">AI Assistant</div>
+                        <div class="message-bubble typing-bubble">
+                            <div class="typing-dots">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Input Area -->
+                <div class="embedded-chat-input">
+                    <div class="input-wrapper-embedded">
+                        <textarea 
+                            id="embeddedMessageInput" 
+                            class="chat-textarea-embedded"
+                            placeholder="Type your question here... (or use voice input)"
+                            rows="1"
+                        ></textarea>
+                        <div class="input-actions">
+                            <button id="embeddedSendBtn" class="send-btn-embedded" title="Send Message">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <line x1="22" y1="2" x2="11" y2="13"></line>
+                                    <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                                </svg>
+                                Send
+                            </button>
+                        </div>
+                    </div>
+                    <div class="input-footer">
+                        <span class="powered-by">Powered by AI • Voice enabled 🎤</span>
+                        <button class="clear-chat-btn" id="embeddedClearBtn">
+                            🗑️ Clear Chat
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Features Sidebar -->
+            <div class="chat-features-sidebar">
+                <div class="feature-card">
+                    <div class="feature-icon">🎤</div>
+                    <h4>Voice Input</h4>
+                    <p>Speak your questions naturally - just click the voice button!</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🤖</div>
+                    <h4>AI-Powered</h4>
+                    <p>Get intelligent responses about Dr. Arjun's work and expertise.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">⚡</div>
+                    <h4>Instant Answers</h4>
+                    <p>Learn about research, projects, and skills in seconds.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🔄</div>
+                    <h4>Multiple Models</h4>
+                    <p>Switch between Claude, GPT-4, and Gemini for different perspectives.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ADD THESE STYLES TO YOUR styles.css -->
+<style>
+/* ============================================
+   EMBEDDED CHAT SECTION STYLES
+   ============================================ */
+
+.section-chat {
+    padding: 100px 0;
+    background: linear-gradient(135deg, #fef7f0 0%, #fff5eb 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+.section-chat::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: 
+        radial-gradient(circle at 20% 50%, rgba(255, 194, 141, 0.1) 0%, transparent 50%),
+        radial-gradient(circle at 80% 50%, rgba(168, 230, 207, 0.1) 0%, transparent 50%);
+    pointer-events: none;
+}
+
+.section-header-chat {
+    text-align: center;
+    margin-bottom: 60px;
+    position: relative;
+    z-index: 1;
+}
+
+.section-title-chat {
+    font-size: 48px;
+    font-weight: 700;
+    color: #2d3436;
+    margin-bottom: 16px;
+    background: linear-gradient(135deg, #ff9a76, #ffc28d);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.section-subtitle-chat {
+    font-size: 18px;
+    color: #636e72;
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 1.7;
+}
+
+.embedded-chat-container {
+    display: grid;
+    grid-template-columns: 1fr 320px;
+    gap: 30px;
+    max-width: 1400px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+}
+
+.embedded-chat-wrapper {
+    background: white;
+    border-radius: 24px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    height: 700px;
+}
+
+/* Chat Header */
+.embedded-chat-header {
+    padding: 24px 30px;
+    background: linear-gradient(135deg, rgba(255, 194, 141, 0.1), rgba(168, 230, 207, 0.1));
+    border-bottom: 2px solid #ffe4d6;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.chat-header-left {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.chat-avatar-lg {
+    width: 56px;
+    height: 56px;
+    background: linear-gradient(135deg, #a8e6cf, #dab6fc);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+    box-shadow: 0 4px 12px rgba(168, 230, 207, 0.3);
+}
+
+.chat-header-text h3 {
+    font-size: 20px;
+    font-weight: 700;
+    color: #2d3436;
+    margin: 0 0 4px 0;
+}
+
+.status-text {
+    font-size: 14px;
+    color: #636e72;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.status-dot {
+    width: 10px;
+    height: 10px;
+    background: #a8e6cf;
+    border-radius: 50%;
+    animation: pulse 2s infinite;
+}
+
+.chat-header-right {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+.embedded-model-select {
+    padding: 10px 16px;
+    background: white;
+    border: 2px solid #ffe4d6;
+    border-radius: 12px;
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    color: #2d3436;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.embedded-model-select:hover {
+    border-color: #ffc28d;
+}
+
+.voice-toggle-btn {
+    padding: 10px 20px;
+    background: linear-gradient(135deg, #dab6fc, #c9a8fc);
+    border: none;
+    border-radius: 12px;
+    font-size: 14px;
+    font-weight: 600;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: 'Poppins', sans-serif;
+}
+
+.voice-toggle-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(218, 182, 252, 0.4);
+}
+
+.voice-toggle-btn.active {
+    animation: pulse 1.5s infinite;
+}
+
+/* Suggestions */
+.chat-suggestions {
+    padding: 20px 30px;
+    background: #fff9f4;
+    border-bottom: 1px solid #ffe4d6;
+}
+
+.suggestion-label {
+    font-size: 13px;
+    color: #636e72;
+    margin-bottom: 12px;
+    font-weight: 600;
+}
+
+.suggestion-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.suggestion-btn {
+    padding: 10px 18px;
+    background: white;
+    border: 2px solid #ffe4d6;
+    border-radius: 20px;
+    font-size: 13px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    color: #636e72;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.suggestion-btn:hover {
+    background: linear-gradient(135deg, #ffc28d, #ff9a76);
+    border-color: #ffc28d;
+    color: white;
+    transform: translateY(-2px);
+}
+
+/* Messages */
+.embedded-chat-messages {
+    flex: 1;
+    overflow-y: auto;
+    padding: 30px;
+    background: #fef7f0;
+}
+
+.embedded-chat-messages .chat-message {
+    display: flex;
+    gap: 14px;
+    margin-bottom: 24px;
+    animation: messageFadeIn 0.3s ease;
+}
+
+.message-content-wrapper {
+    flex: 1;
+    max-width: 75%;
+}
+
+.message-author {
+    font-size: 13px;
+    font-weight: 600;
+    color: #636e72;
+    margin-bottom: 6px;
+}
+
+.message-bubble ul {
+    margin: 12px 0;
+    padding-left: 20px;
+}
+
+.message-bubble li {
+    margin: 8px 0;
+    color: #2d3436;
+}
+
+/* Input */
+.embedded-chat-input {
+    padding: 24px 30px;
+    background: white;
+    border-top: 2px solid #ffe4d6;
+}
+
+.input-wrapper-embedded {
+    display: flex;
+    gap: 12px;
+    align-items: flex-end;
+    margin-bottom: 12px;
+}
+
+.chat-textarea-embedded {
+    flex: 1;
+    padding: 14px 18px;
+    background: #fff9f4;
+    border: 2px solid #ffe4d6;
+    border-radius: 14px;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    color: #2d3436;
+    resize: none;
+    max-height: 120px;
+    transition: all 0.3s ease;
+}
+
+.chat-textarea-embedded:focus {
+    outline: none;
+    border-color: #ff9a76;
+    background: white;
+}
+
+.send-btn-embedded {
+    padding: 14px 28px;
+    background: linear-gradient(135deg, #ff9a76, #ffc28d);
+    border: none;
+    border-radius: 14px;
+    font-size: 15px;
+    font-weight: 600;
+    color: white;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: all 0.3s ease;
+    font-family: 'Poppins', sans-serif;
+}
+
+.send-btn-embedded:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(255, 154, 118, 0.4);
+}
+
+.input-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.powered-by {
+    font-size: 12px;
+    color: #b2bec3;
+}
+
+.clear-chat-btn {
+    padding: 6px 14px;
+    background: transparent;
+    border: 1px solid #ffe4d6;
+    border-radius: 8px;
+    font-size: 12px;
+    color: #636e72;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: 'Poppins', sans-serif;
+}
+
+.clear-chat-btn:hover {
+    background: #fff9f4;
+    border-color: #ffc28d;
+}
+
+/* Features Sidebar */
+.chat-features-sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.feature-card {
+    background: white;
+    padding: 24px;
+    border-radius: 16px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+.feature-icon {
+    font-size: 36px;
+    margin-bottom: 12px;
+}
+
+.feature-card h4 {
+    font-size: 16px;
+    font-weight: 700;
+    color: #2d3436;
+    margin: 0 0 8px 0;
+}
+
+.feature-card p {
+    font-size: 13px;
+    color: #636e72;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+    .embedded-chat-container {
+        grid-template-columns: 1fr;
+    }
+    
+    .chat-features-sidebar {
+        grid-template-columns: repeat(2, 1fr);
+        flex-direction: row;
+    }
+}
+
+@media (max-width: 768px) {
+    .section-title-chat {
+        font-size: 36px;
+    }
+    
+    .embedded-chat-header {
+        flex-direction: column;
+        gap: 16px;
+        align-items: flex-start;
+    }
+    
+    .chat-header-right {
+        width: 100%;
+        flex-direction: column;
+    }
+    
+    .embedded-model-select,
+    .voice-toggle-btn {
+        width: 100%;
+    }
+    
+    .chat-features-sidebar {
+        grid-template-columns: 1fr;
+    }
+}
+</style>
+
+<!-- JavaScript is the same as chatbot-script.js, just update element IDs -->

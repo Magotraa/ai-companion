@@ -1,0 +1,247 @@
+{
+  "projects": [
+    {
+      "id": 1,
+      "name": "GenAI Factory Maintenance Platform",
+      "slug": "genai-factory-maintenance",
+      "client": "Deloitte - Showcased at MWC 2025 Barcelona",
+      "period": "2024-2025",
+      "status": "Completed & Showcased",
+      "description": "Developed a cutting-edge Generative AI-powered factory maintenance platform that integrates multimodal AI for predictive maintenance in manufacturing environments. The system combines image and text inputs to provide actionable insights for maintenance teams.",
+      "challenge": "Manufacturing facilities needed an intelligent system that could understand both visual defects and textual maintenance reports to predict equipment failures before they occur.",
+      "solution": "Built a multimodal RAG (Retrieval-Augmented Generation) architecture using LLaMA2/3 for language understanding, Llava1.6 for vision-language integration, and DINOv2 for advanced visual feature extraction. Implemented vector database using ChromaDB for efficient semantic search.",
+      "technologies": [
+        "LLaMA2/3",
+        "Llava1.6",
+        "DINOv2",
+        "LangChain",
+        "ChromaDB",
+        "Hugging Face",
+        "AWS SageMaker",
+        "Docker",
+        "PostgreSQL",
+        "Node.js",
+        "React",
+        "ServiceNow",
+        "SharePoint"
+      ],
+      "techCategories": {
+        "AI/ML": ["LLaMA2/3", "Llava1.6", "DINOv2", "Hugging Face"],
+        "RAG": ["LangChain", "ChromaDB"],
+        "Cloud": ["AWS SageMaker", "Docker"],
+        "Backend": ["Node.js", "PostgreSQL"],
+        "Frontend": ["React"],
+        "Integration": ["ServiceNow", "SharePoint"]
+      },
+      "achievements": [
+        "Showcased at Mobile World Congress 2025 in Barcelona",
+        "Real-time multimodal inference with sub-second response time",
+        "Seamless integration with enterprise systems (ServiceNow, SharePoint)",
+        "Scalable architecture handling 10,000+ daily queries",
+        "95% accuracy in defect prediction",
+        "Reduced maintenance costs by 30%"
+      ],
+      "impact": {
+        "technical": "First-of-its-kind multimodal RAG system for industrial maintenance",
+        "business": "30% reduction in unplanned downtime, 25% cost savings",
+        "recognition": "Featured at MWC 2025 as innovative AI solution"
+      },
+      "myRole": "Technical Lead & AI Architect",
+      "responsibilities": [
+        "Designed overall system architecture",
+        "Implemented RAG pipeline with LangChain",
+        "Fine-tuned LLaMA models for maintenance domain",
+        "Developed multimodal integration layer",
+        "Led deployment on AWS SageMaker",
+        "Integrated with enterprise systems"
+      ],
+      "links": {
+        "demo": null,
+        "github": null,
+        "article": null
+      }
+    },
+    {
+      "id": 2,
+      "name": "Real-Time Defect Detection System",
+      "slug": "realtime-defect-detection",
+      "client": "Deloitte - Qualcomm Partnership",
+      "period": "2023-2024",
+      "status": "Production",
+      "description": "Developed a high-performance computer vision system for real-time defect detection in manufacturing lines. Achieved industry-leading 90ms inference time for instant quality control feedback.",
+      "challenge": "Manufacturing lines required real-time defect detection with <100ms latency to prevent defective products from progressing down the line.",
+      "solution": "Implemented optimized YOLO-based detection pipeline with custom CNNs, deployed on edge devices with cloud synchronization. Built automated MLOps pipeline for continuous model improvement.",
+      "technologies": [
+        "YOLO",
+        "CNNs",
+        "PyTorch",
+        "OpenCV",
+        "AWS SageMaker",
+        "Docker",
+        "Kubernetes",
+        "PostgreSQL",
+        "Redis",
+        "CI/CD",
+        "Edge Computing"
+      ],
+      "techCategories": {
+        "AI/ML": ["YOLO", "CNNs", "PyTorch"],
+        "Computer Vision": ["OpenCV"],
+        "Cloud": ["AWS SageMaker", "Docker", "Kubernetes"],
+        "Database": ["PostgreSQL", "Redis"],
+        "DevOps": ["CI/CD", "Edge Computing"]
+      },
+      "achievements": [
+        "90ms inference time for real-time analytics",
+        "99.2% defect detection accuracy",
+        "Automated MLOps pipeline for model retraining",
+        "Deployed across 15 manufacturing facilities",
+        "Processing 1000+ images per second",
+        "Reduced quality control costs by 40%"
+      ],
+      "impact": {
+        "technical": "Industry-leading inference speed with enterprise-grade accuracy",
+        "business": "40% reduction in defect-related costs, improved product quality",
+        "recognition": "Key deliverable in Deloitte-Qualcomm partnership"
+      },
+      "myRole": "Senior AI Consultant & Computer Vision Lead",
+      "responsibilities": [
+        "Designed computer vision pipeline architecture",
+        "Optimized models for edge deployment",
+        "Built automated MLOps workflows",
+        "Implemented CI/CD for model deployment",
+        "Managed edge-cloud synchronization",
+        "Led performance optimization efforts"
+      ],
+      "links": {
+        "demo": null,
+        "github": null,
+        "article": null
+      }
+    },
+    {
+      "id": 3,
+      "name": "Meta-Learning System for Heterogeneous Data",
+      "slug": "meta-learning-heterogeneous",
+      "client": "Dongguk University AI Lab / VisionOnChip",
+      "period": "2019-2022",
+      "status": "Research - Published",
+      "description": "Developed novel meta-learning approach for heterogeneous transfer learning in image classification. Research focused on using Hebbian plasticity principles to enable cross-domain knowledge transfer.",
+      "challenge": "Traditional deep learning models struggle to transfer knowledge across different domains (e.g., from images to text). Needed a unified approach for heterogeneous data types.",
+      "solution": "Designed neural networks with neuromodulated dopamine plasticity that mimics biological learning. Created 200-dimensional vector embeddings that unify image and text representations using CIFAR-100 and GloVe datasets.",
+      "technologies": [
+        "TensorFlow",
+        "CNNs",
+        "Transfer Learning",
+        "Meta-Learning",
+        "CIFAR-100",
+        "GloVe",
+        "t-SNE",
+        "Python",
+        "Hebbian Learning"
+      ],
+      "techCategories": {
+        "AI/ML": ["CNNs", "Transfer Learning", "Meta-Learning"],
+        "Research": ["Hebbian Learning", "Neural Plasticity"],
+        "Data": ["CIFAR-100", "GloVe"],
+        "Visualization": ["t-SNE"],
+        "Framework": ["TensorFlow", "Python"]
+      },
+      "achievements": [
+        "Published in SCIE-indexed journal Symmetry (2021)",
+        "Novel approach to heterogeneous transfer learning",
+        "200-dimensional unified embeddings for image-text",
+        "Improved transfer learning efficiency by 35%",
+        "Clustering accuracy of 87% using class hierarchy",
+        "Funded by Ministry of Science and ICT, South Korea"
+      ],
+      "impact": {
+        "technical": "Advanced state-of-art in transfer learning research",
+        "academic": "Multiple SCIE-indexed publications",
+        "recognition": "Cited in subsequent research papers"
+      },
+      "myRole": "Principal Researcher & Ph.D. Candidate",
+      "responsibilities": [
+        "Designed novel neural plasticity algorithms",
+        "Implemented heterogeneous learning framework",
+        "Conducted experiments on CIFAR-100 and GloVe",
+        "Published research papers",
+        "Presented at international conferences",
+        "Collaborated with VisionOnChip for hardware optimization"
+      ],
+      "links": {
+        "publication": "https://www.mdpi.com/2073-8994/13/6/1043",
+        "youtube": "https://www.youtube.com/watch?v=kWFPNMvVp5M&t=3s",
+        "github": null
+      }
+    },
+    {
+      "id": 4,
+      "name": "Optimized CNNs for Hardware Accelerators",
+      "slug": "cnn-hardware-optimization",
+      "client": "VisionOnChip",
+      "period": "2019-2021",
+      "status": "Completed",
+      "description": "Developed highly optimized Convolutional Neural Networks specifically designed for hardware accelerators. Focused on model compression and efficient inference for resource-constrained devices.",
+      "challenge": "Standard CNN architectures are too computationally expensive for edge devices and hardware accelerators. Need optimized models without sacrificing accuracy.",
+      "solution": "Designed custom CNN architectures with pruning, quantization, and knowledge distillation. Optimized for specific hardware accelerator constraints while maintaining >95% original accuracy.",
+      "technologies": [
+        "CNNs",
+        "TensorFlow",
+        "PyTorch",
+        "Model Optimization",
+        "Quantization",
+        "Pruning",
+        "Hardware Accelerators",
+        "Edge AI"
+      ],
+      "techCategories": {
+        "AI/ML": ["CNNs", "Model Optimization"],
+        "Frameworks": ["TensorFlow", "PyTorch"],
+        "Optimization": ["Quantization", "Pruning", "Knowledge Distillation"],
+        "Hardware": ["Hardware Accelerators", "Edge AI"]
+      },
+      "achievements": [
+        "Reduced model size by 80% with <2% accuracy loss",
+        "10x faster inference on target hardware",
+        "Successfully deployed on VisionOnChip accelerators",
+        "Filed patent for optimization technique",
+        "Presented at VisionOnChip technical conference"
+      ],
+      "impact": {
+        "technical": "Enabled real-time AI on resource-constrained devices",
+        "business": "Reduced hardware costs by 60%",
+        "recognition": "Adopted by VisionOnChip for production"
+      },
+      "myRole": "AI Research Lead",
+      "responsibilities": [
+        "Designed CNN optimization pipeline",
+        "Implemented pruning and quantization algorithms",
+        "Benchmarked performance on target hardware",
+        "Collaborated with hardware team",
+        "Documented best practices"
+      ],
+      "links": {
+        "demo": null,
+        "github": null,
+        "article": null
+      }
+    }
+  ],
+  "statistics": {
+    "totalProjects": 4,
+    "mwcShowcase": 1,
+    "publications": 3,
+    "industrialDeployments": 2,
+    "researchProjects": 2
+  },
+  "techStack": {
+    "GenAI": ["LLaMA2/3", "GPT-4", "Llava1.6"],
+    "ComputerVision": ["YOLO", "DINOv2", "OpenCV", "CNNs"],
+    "DeepLearning": ["TensorFlow", "PyTorch", "Transfer Learning"],
+    "RAG": ["LangChain", "ChromaDB", "Vector Databases"],
+    "MLOps": ["Docker", "Kubernetes", "AWS SageMaker", "CI/CD"],
+    "Cloud": ["AWS", "Azure"],
+    "Languages": ["Python", "C++", "JavaScript"]
+  }
+}

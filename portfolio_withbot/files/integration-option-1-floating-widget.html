@@ -1,0 +1,133 @@
+<!-- 
+===============================================================================
+INTEGRATION OPTION 1: FLOATING CHAT WIDGET (RECOMMENDED)
+===============================================================================
+This adds a chat button in the bottom-right corner that opens a chat modal.
+Perfect for non-intrusive AI assistance on your portfolio.
+
+INSTRUCTIONS:
+1. Add the CSS to your styles.css file (see chatbot-styles.css)
+2. Add the HTML code BEFORE the closing </body> tag in your index.html
+3. Add the JavaScript to your script.js file (see chatbot-script.js)
+4. Configure your API keys in the script
+
+FEATURES:
+✓ Non-intrusive floating button
+✓ Opens in modal overlay
+✓ Voice input/output
+✓ Chat history
+✓ Model selection
+✓ Matches your portfolio's warm color scheme
+===============================================================================
+-->
+
+<!-- ADD THIS CODE BEFORE </body> IN YOUR index.html -->
+
+<!-- AI Chat Widget -->
+<div class="chat-widget-container">
+    <!-- Floating Chat Button -->
+    <button class="chat-widget-button" id="chatWidgetButton" aria-label="Open AI Chat">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+        </svg>
+        <span class="chat-badge">AI</span>
+    </button>
+
+    <!-- Chat Modal -->
+    <div class="chat-widget-modal" id="chatWidgetModal">
+        <div class="chat-widget-content">
+            <!-- Header -->
+            <div class="chat-widget-header">
+                <div class="chat-header-info">
+                    <div class="chat-avatar">🤖</div>
+                    <div>
+                        <h3>AI Assistant</h3>
+                        <p class="chat-status">Online</p>
+                    </div>
+                </div>
+                <div class="chat-header-actions">
+                    <button class="header-btn" id="voiceToggle" title="Voice Input">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"></path>
+                            <path d="M19 10v2a7 7 0 0 1-14 0v-2"></path>
+                            <line x1="12" y1="19" x2="12" y2="23"></line>
+                            <line x1="8" y1="23" x2="16" y2="23"></line>
+                        </svg>
+                    </button>
+                    <button class="header-btn" id="chatMinimize" title="Minimize">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                        </svg>
+                    </button>
+                    <button class="header-btn" id="chatClose" title="Close">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <line x1="18" y1="6" x2="6" y2="18"></line>
+                            <line x1="6" y1="6" x2="18" y2="18"></line>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Model Selector (Compact) -->
+            <div class="chat-widget-settings">
+                <select id="widgetModelSelect" class="widget-model-select">
+                    <option value="claude-sonnet-4">Claude Sonnet 4.5</option>
+                    <option value="gpt-4o">GPT-4o</option>
+                    <option value="gemini-2.0-flash">Gemini 2.0 Flash</option>
+                </select>
+            </div>
+
+            <!-- Messages -->
+            <div class="chat-widget-messages" id="widgetChatMessages">
+                <div class="chat-message assistant">
+                    <div class="message-avatar">🤖</div>
+                    <div class="message-bubble">
+                        <p>Hi! I'm Dr. Arjun's AI assistant. I can help you learn more about his work in AI, projects, or answer questions about his expertise. How can I help you today?</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Typing Indicator -->
+            <div class="typing-indicator-widget" id="widgetTyping">
+                <div class="message-avatar">🤖</div>
+                <div class="message-bubble">
+                    <div class="typing-dots">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Input -->
+            <div class="chat-widget-input">
+                <textarea 
+                    id="widgetMessageInput" 
+                    placeholder="Ask me anything..."
+                    rows="1"
+                ></textarea>
+                <button id="widgetSendBtn" class="widget-send-btn">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="22" y1="2" x2="11" y2="13"></line>
+                        <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Quick Actions -->
+            <div class="chat-quick-actions">
+                <button class="quick-action-btn">Tell me about Arjun's research</button>
+                <button class="quick-action-btn">What projects has he worked on?</button>
+                <button class="quick-action-btn">His AI expertise</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Notification Toast -->
+<div class="chat-toast" id="chatToast">
+    <span class="toast-icon">✓</span>
+    <span class="toast-text" id="toastText"></span>
+</div>
+
+<!-- END OF HTML TO ADD -->
